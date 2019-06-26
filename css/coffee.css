@@ -1,0 +1,49 @@
+body{ 
+    font-family:BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji","微軟正黑體";
+
+
+}
+.navbar{border-width:5px !important;}
+/* 下面加上img 表示指定改在img不是改div */
+.carousel-item img {max-width:800px;
+    
+}
+.carousel-caption{background:rgba(0,0,0,0.2)
+
+}
+/* 排版媒體查詢  圖1  字2 */
+@media (max-width: 960px) {
+    .myimg{
+        order: 1;
+    }
+    .mytext{
+        order: 2;
+    }
+}
+/* 加入圖ID  rgba背景深 可由深到淺 */
+#jb1{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.1)),url(../img/16pic_7389835_b.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* 扣外距  自動計算 減號前後空格*/
+    height: calc(100vh - 64px);
+    margin-bottom: 0px;
+    /* 文字 */
+    color:white;
+
+
+}
+.card-img-top{
+    height:200px;
+    /* 使設定200高度 圖片等比例 */
+    object-fit:cover;
+}
+.card-body{
+    /* 每個方塊高度控制一樣高 */
+    min-height:180px;
+    max-height:180px;
+    /* 字超出後捲動 */
+    overflow-y:auto;
+    word-break:break-all; 
+}
